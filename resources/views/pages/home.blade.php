@@ -103,7 +103,7 @@
                                         strengthen their networks and engage new audiences
                                         with thoughtful content and design strategies.
                                     </p>
-                                    <a href="about-dark.html" class="wc-btn-dark">Explore Me</a>
+                                    <a href="{{route('about')}}" class="wc-btn-dark">Explore Me</a>
                                 </div>
                             </div>
                         </div>
@@ -138,6 +138,8 @@
                     </div>
                 </section>
 
+                {{-- @include('components.services-slider') --}}
+
                 <section class="portfolio-section portfolio__project">
                     <div class="container">
                         <div class="row">
@@ -155,88 +157,32 @@
                                 <div class="pp-slider-wrapper">
                                     <div class="swiper portfolio__project-slider">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide pp-slide">
-                                                <div class="pp-slide-img">
-                                                    <a href="portfolio-details.html"><img
-                                                            src="frontend/assets/imgs/portfolio/1/1.jpg"
-                                                            alt="Portfolio Thumbnail" /></a>
+                                            @foreach ($projects as $project)
+                                                <div class="swiper-slide pp-slide">
+                                                    <div class="pp-slide-img">
+                                                        <a href="{{ $project->project_link }}" target="_blank"><img src="{{ asset($project->image_path) }}" alt="{{ $project->title }}" /></a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide pp-slide">
-                                                <div class="pp-slide-img">
-                                                    <a href="portfolio-details.html"><img
-                                                            src="frontend/assets/imgs/portfolio/1/2.jpg"
-                                                            alt="Portfolio Thumbnail" /></a>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide pp-slide">
-                                                <div class="pp-slide-img">
-                                                    <a href="portfolio-details.html"><img
-                                                            src="frontend/assets/imgs/portfolio/1/3.jpg"
-                                                            alt="Portfolio Thumbnail" /></a>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide pp-slide">
-                                                <div class="pp-slide-img">
-                                                    <a href="portfolio-details.html"><img
-                                                            src="frontend/assets/imgs/portfolio/1/4.jpg"
-                                                            alt="Portfolio Thumbnail" /></a>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide pp-slide">
-                                                <div class="pp-slide-img">
-                                                    <a href="portfolio-details.html"><img
-                                                            src="frontend/assets/imgs/portfolio/1/5.jpg"
-                                                            alt="Portfolio Thumbnail" /></a>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
 
-                                    <div class="pp-next swipper-btn">prev</div>
-                                    <div class="pp-prev swipper-btn">Next</div>
+                                    <div class="pp-next swiper-btn text-white">Next</div>
+                                    <div class="pp-prev swiper-btn text-white">Prev</div>
                                 </div>
                             </div>
 
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
                                 <div class="swiper portfolio__project-thumbs">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="pp-slide-thumb">
-                                                <h3 class="pp-slide-title">Saltanat Restaurant</h3>
-                                                <p>Restaurant Website</p>
+                                        @foreach ($projects as $project)
+                                            <div class="swiper-slide">
+                                                <div class="pp-slide-thumb">
+                                                    <h3 class="pp-slide-title">{{ $project->title }}</h3>
+                                                    <p>{{ $project->description }}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="pp-slide-thumb">
-                                                <h3 class="pp-slide-title">Radiant Self Treasure</h3>
-                                                <p>Blog Website</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="pp-slide-thumb">
-                                                <h3 class="pp-slide-title">
-                                                    Saas Pedia
-                                                </h3>
-                                                <p>Wordpress Website</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="pp-slide-thumb">
-                                                <h3 class="pp-slide-title">
-                                                    Charity Right Pakistan
-                                                </h3>
-                                                <p>Donation Website</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="pp-slide-thumb">
-                                                <h3 class="pp-slide-title">
-                                                  Cobra Hygiene
-                                                </h3>
-                                                <p>Product Showcase Website</p>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +211,7 @@
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                                 <div class="service__top-btn">
                                     <div class="btn_wrapper">
-                                        <a href="service.html" class="btn-item wc-btn-secondary btn-hover"><span></span>
+                                        <a href="#" class="btn-item wc-btn-secondary btn-hover"><span></span>
                                             View <br>all
                                             services <i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
@@ -275,8 +221,8 @@
 
                         <div class="service__list-wrapper">
                             <div class="row">
-                                <div class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
-                                    <div class="service__img-wrapper">
+                                <di class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
+                                    <div class="service__img-wrapper ">
                                         <img src="frontend/assets/imgs/service/1/1.jpg" alt="Service Image"
                                             class="service__img img-1 active">
                                         <img src="frontend/assets/imgs/service/1/2.png" alt="Service Image"
@@ -291,21 +237,18 @@
                                         <span class="shape-box-3"></span>
                                         <span class="shape-box-4"></span>
                                     </div>
-                                </div>
+                                </di v>
                                 <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
                                     <div class="service__list">
-                                        <a href="service-details.html">
+                                        <a href="#">
                                             <div class="service__item animation_home1_service" data-service="1">
                                                 <div class="service__number"><span>01</span></div>
                                                 <div class="service__title-wrapper">
-                                                    <h4 class="service__title">Web & Mobile
-                                                        Development</h4>
+                                                    <h4 class="service__title">Website Development</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>We create, products, brands, apps & websites for the companies all
-                                                        around the world class
-                                                        digital
-                                                        products</p>
+                                                    <p> I am specialize in creating robust and scalable web applications tailored to meet your specific
+                                                        business needs..</p>
                                                 </div>
                                                 <div class="service__link">
                                                     <p><i class="fa-solid fa-arrow-right"></i></p>
@@ -313,17 +256,15 @@
                                             </div>
                                         </a>
 
-                                        <a href="service-details.html">
+                                        <a href="#">
                                             <div class="service__item  animation_home1_service" data-service="2">
                                                 <div class="service__number"><span>02</span></div>
                                                 <div class="service__title-wrapper">
-                                                    <h4 class="service__title">Interaction <br>Design</h4>
+                                                    <h4 class="service__title">CUSTOM SOFTWARE DEVELOPMENT</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>We create, products, brands, apps & websites for the companies all
-                                                        around the world class
-                                                        digital
-                                                        products</p>
+                                                    <p>My custom software solutions are designed to streamline your business operations and enhance
+                                                        productivity.</p>
                                                 </div>
                                                 <div class="service__link">
                                                     <p><i class="fa-solid fa-arrow-right"></i></p>
@@ -331,17 +272,15 @@
                                             </div>
                                         </a>
 
-                                        <a href="service-details.html">
+                                        <a href="#">
                                             <div class="service__item  animation_home1_service" data-service="3">
                                                 <div class="service__number"><span>03</span></div>
                                                 <div class="service__title-wrapper">
-                                                    <h4 class="service__title">Digital <br>Maketing</h4>
+                                                    <h4 class="service__title">WORDPRESS WEB DEVELOPMENT</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>We create, products, brands, apps & websites for the companies all
-                                                        around the world class
-                                                        digital
-                                                        products</p>
+                                                    <p> As experts in WordPress development, we create stunning websites that are user-friendly and
+                                                        easily manageable.</p>
                                                 </div>
                                                 <div class="service__link">
                                                     <p><i class="fa-solid fa-arrow-right"></i></p>
@@ -349,17 +288,15 @@
                                             </div>
                                         </a>
 
-                                        <a href="service-details.html">
+                                        <a href="#">
                                             <div class="service__item  animation_home1_service" data-service="4">
                                                 <div class="service__number"><span>04</span></div>
                                                 <div class="service__title-wrapper">
-                                                    <h4 class="service__title">Branding and Strategy</h4>
+                                                    <h4 class="service__title">WEBSITE REVAMPING & BUG FIXES</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>We create, products, brands, apps & websites for the companies all
-                                                        around the world class
-                                                        digital
-                                                        products</p>
+                                                    <p>I am specialize in refining interfaces, resolving glitches, and optimizing functionality for
+                                                        seamless user experiences.</p>
                                                 </div>
                                                 <div class="service__link">
                                                     <p><i class="fa-solid fa-arrow-right"></i></p>
@@ -437,7 +374,7 @@
                                     <p class="cta__sub-title">Work with us</p>
                                     <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
                                     <div class="btn_wrapper">
-                                        <a href="contact.html"
+                                        <a href="{{route('contact')}}"
                                             class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>

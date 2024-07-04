@@ -15,9 +15,7 @@
                         <div class="row">
                             <div class="col-xxl-12 ps-lg-5">
                                 <div class="hero__about-content">
-                                    <h1 class="hero-title animation__word_come">We’re a full service creative and digital
-                                        agency, working
-                                        globally with leargest brands.</h1>
+                                    <h1 class="hero-title animation__word_come">About me</h1>
                                     <div class="hero__about-info">
                                         <div class="hero__about-btn">
                                             <div class="btn_wrapper">
@@ -28,9 +26,7 @@
                                             </div>
                                         </div>
                                         <div class="hero__about-text title-anim">
-                                            <p>Think of the world's most iconica and successful brands easily findable,
-                                                impactful.
-                                                Interactional and exceptional designs. Our story takes beginning in 2013</p>
+                                            <p>I am a self-taught full-stack programmer with a passion for crafting efficient and elegant solutions. With expertise in both front-end and back-end development, I thrive on turning ideas into robust web applications. My journey in programming has been driven by a curiosity to learn and a dedication to mastering new technologies. I specialize in creating scalable and user-centric software solutions that empower businesses and enhance user experiences.</p>
                                         </div>
                                         <div class="hero__about-award">
                                             <img src="{{ asset('frontend/assets/imgs/about/award.png') }}"
@@ -143,6 +139,63 @@
                 </section>
                 <!-- Counter area end -->
 
+
+                <!-- Stack area start -->
+                <section class="brand__area">
+                    <div class="container g-0 line pt-140 pb-140">
+                        <span class="line-3"></span>
+                        <div class="row g-0">
+                            <div class="col-xxl-12 ps-lg-5">
+                                <div class="sec-title-wrapper">
+                                    <h2 class="sec-sub-title title-anim">Fram Work I Use</h2>
+                                    <h3 class="sec-title title-anim">We are happy to work with global <br>
+                                        largest brands</h3>
+                                </div>
+                            </div>
+
+                            <div class="brand__list">
+                                <div class="brand__item fade_bottom">
+                                    <i class="fa-brands fa-html5 w-100"></i>
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/3.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/4.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/5.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/6.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/3.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/4.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/5.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/6.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/1.png') }}" alt="Brand Logo">
+                                </div>
+                                <div class="brand__item fade_bottom">
+                                    <img src="{{ asset('frontend/assets/imgs/brand/2.png') }}" alt="Brand Logo">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Stack area end -->
 
                 <!-- Brand area start -->
                 <section class="brand__area">

@@ -2576,7 +2576,7 @@
         const contentBox = team_item_7.getBoundingClientRect();
         const dx = event.clientX - contentBox.x;
         const dy = event.clientY - contentBox.y;
-        team_item_7.children[3].style.transform = `translate(${dx}px, ${dy}px)`;
+        team_item_7.children[4].style.transform = `translate(${dx}px, ${dy}px)`;
     }
 
     team_item_7.forEach((item, i) => {
@@ -4320,5 +4320,4 @@
             });
         });
     }
-    /////////////////////////////////////////////////
 })(jQuery);

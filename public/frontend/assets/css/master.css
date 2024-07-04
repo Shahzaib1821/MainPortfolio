@@ -65,7 +65,7 @@
     --black-6: #262626;
     --black-7: #555555;
     --black-13: #666;
-    --white: #fff;
+    --white: #e2e8f0;
     --white-2: #efefef;
     --white-3: #e9e9e9;
     --white-4: #f0f0f0;
@@ -91,7 +91,7 @@
     --pink: #FAEDE9;
     --pink-2: #FF9776;
     --pink-3: #F3ECEC;
-    --pink-4: #FFFAF0;
+    --pink-4: #e2e8f0AF0;
     --pink-5: #E0E3CC;
     --bg-line: #1e1e1e;
     --d-gray: #6A6A6A;
@@ -1514,7 +1514,8 @@ img {
 }
 
 .dark .portfolio__hero-area {
-    background-color: transparent !important;;
+    background-color: transparent !important;
+    ;
 }
 
 .dark .portfolio__hero-area::after {
@@ -1523,7 +1524,7 @@ img {
 }
 
 .dark .portfolio__about {
-    background-color:transparent !important;
+    background-color: transparent !important;
 }
 
 .dark .portfolio__about::after {
@@ -8390,8 +8391,8 @@ img {
 .hero__about-info {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 30px 2.5fr 30px 2.5fr;
-    grid-template-columns: 1fr 2.5fr 2.5fr;
+    -ms-grid-columns: 1fr 30px 2.5fr 30px 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
     padding-bottom: 80px;
     grid-gap: 30px;
 }
@@ -10589,8 +10590,8 @@ img {
 .service__item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0.7fr 2fr 2.5fr 1fr;
-    grid-template-columns: 0.7fr 2fr 2.5fr 1fr;
+    -ms-grid-columns: 0.4fr 2fr 2.5fr 0.5fr;
+    grid-template-columns: 0.4fr 2fr 2.5fr 0.5fr;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -10915,7 +10916,7 @@ img {
 .service__title {
     display: block;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.3;
     color: var(--gray-2);
 }
@@ -20896,7 +20897,7 @@ img {
 }
 
 .content {
-    color: #fff;
+    color: #e2e8f0;
     position: absolute;
     bottom: 120px;
     text-align: center;
@@ -30376,9 +30377,10 @@ main {
     position: relative;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0.9fr 1fr 0.1fr;
-    grid-template-columns: 0.9fr 1fr 0.1fr;
+    -ms-grid-columns: 0.5fr 0.2fr 0.7fr 0.2fr;
+    grid-template-columns: 0.5fr 0.2fr 0.7fr 0.2fr;
     padding: 18px 0;
+    opacity: 1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -30550,11 +30552,11 @@ main {
 }
 
 .team__hover-7 {
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 40%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 75%;
@@ -37111,7 +37113,7 @@ ul.mega-menu-2.woocomerce-megamenu {
 .price-range-slider .range-bar .ui-slider-handle {
     border: none;
     border-radius: 25px;
-    background: #fff;
+    background: #e2e8f0;
     border: 2px solid #06b9c0;
     height: 17px;
     width: 17px;
@@ -41452,3 +41454,345 @@ ul.mega-menu-2.woocomerce-megamenu {
 }
 
 /*# sourceMappingURL=master.css.map */
+
+.custom-carousel {
+    height: 70vh;
+    margin-top: -50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-carousel .custom-list .custom-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.custom-carousel .custom-list .custom-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-carousel .custom-list .custom-item .content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    max-width: 40%;
+    left: 25%;
+    transform: translateX(-50%);
+    padding: 30px;
+    box-sizing: border-box;
+    color: #121212;
+    text-shadow: 0 5px 10px #0004;
+    background: #e2e8f0;
+    height: 450px;
+}
+
+.custom-carousel .custom-list .custom-item .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.custom-carousel .custom-list .custom-item .title,
+.custom-carousel .custom-list .custom-item .topic {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.custom-carousel .custom-list .custom-item .topic {
+    color: #f1683a;
+}
+
+.custom-carousel .custom-list .custom-item .butn {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.custom-carousel .custom-list .custom-item .butn button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+/* thumbail */
+.custom-thumbnails {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.custom-thumbnails .custom-item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.custom-thumbnails .custom-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.custom-thumbnails .custom-item .content {
+    color: #e2e8f0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.custom-thumbnails .custom-item .content .title {
+    font-weight: 500;
+}
+
+.custom-thumbnails .custom-item .content .description {
+    font-weight: 300;
+}
+
+/* custom-arrows */
+.custom-arrows {
+    position: absolute;
+    top: 90%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.custom-arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    color: #e2e8f0;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.custom-arrows button:hover {
+    background-color: #e2e8f0;
+    color: #000;
+}
+
+/* animation */
+.custom-carousel .custom-list .custom-item {
+    z-index: 1;
+}
+
+/* animation text in first custom-item */
+
+.custom-carousel .custom-list .custom-item .content .author,
+.custom-carousel .custom-list .custom-item .content .title,
+.custom-carousel .custom-list .custom-item .content .topic,
+.custom-carousel .custom-list .custom-item .content .des,
+.custom-carousel .custom-list .custom-item .content .butn {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.custom-carousel .custom-list .custom-item .content .title {
+    animation-delay: 1.2s !important;
+}
+
+.custom-carousel .custom-list .custom-item .content .topic {
+    animation-delay: 1.4s !important;
+}
+
+.custom-carousel .custom-list .custom-item .content .des {
+    animation-delay: 1.6s !important;
+    color: #121212;
+}
+
+.custom-carousel .custom-list .custom-item .content .butn {
+    animation-delay: 1.8s !important;
+}
+
+/* create animation when next click */
+.custom-carousel.next .custom-list .custom-item img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.custom-carousel.next .custom-thumbnails .custom-item {
+    overflow: hidden;
+    animation: showcustom-thumbnails .5s linear 1 forwards;
+}
+
+.custom-carousel.prev .custom-list .custom-item img {
+    z-index: 100;
+}
+
+@keyframes showcustom-thumbnails {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.custom-carousel.next .custom-thumbnails {
+    animation: effectnext .5s linear 1 forwards;
+}
+
+@keyframes effectnext {
+    from {
+        transform: translateX(150px);
+    }
+}
+
+/* running custom-time */
+
+.custom-carousel .custom-time {
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+}
+
+.custom-carousel.next .custom-time,
+.custom-carousel.prev .custom-time {
+    animation: runningcustom-time 3s linear 1 forwards;
+}
+
+@keyframes runningcustom-time {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+
+/* prev click */
+
+.custom-carousel.prev .custom-list {
+    z-index: 2;
+}
+
+.custom-carousel.prev .custom-list img {
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes outFrame {
+    to {
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.custom-carousel.prev .custom-thumbnails .custom-item {
+    overflow: hidden;
+    opacity: 0;
+    animation: showcustom-thumbnails .5s linear 1 forwards;
+}
+
+.custom-carousel.next .custom-arrows button,
+.custom-carousel.prev .custom-arrows button {
+    pointer-events: none;
+}
+
+.custom-carousel.prev .custom-list .content .author,
+.custom-carousel.prev .custom-list .content .title,
+.custom-carousel.prev .custom-list .content .topic,
+.custom-carousel.prev .custom-list .content .des,
+.custom-carousel.prev .custom-list .content .butn {
+    animation: contentOut .5s linear 1 forwards !important;
+}
+
+@keyframes contentOut {
+    to {
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .custom-carousel .custom-list .custom-item .content {
+        padding-right: 0;
+    }
+
+    .custom-carousel .custom-list .custom-item .content .title {
+        font-size: 30px;
+    }
+}
+
+.custom-badge {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.custom-badges {
+    font-weight: 500;
+    color: #5eead4;
+    line-height: 1.5rem;
+    background-color: #2dd4bf1a;
+    padding: .25rem .75rem;
+    border-radius: 9999px;
+    font-size: 10px;
+}
+.project-heading{
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e8f0;
+    font-family: Poppins;
+}

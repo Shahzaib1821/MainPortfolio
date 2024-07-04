@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $projects = Project::all();
+        return view('pages.home', compact('projects'));
     }
 
     public function about()
@@ -16,7 +18,8 @@ class FrontEndController extends Controller
         return view('pages.about');
     }
     public function portfolio(){
-        return view('pages.portfolio');
+        $projects = Project::all();
+        return view('pages.portfolio', compact('projects'));
     }
     public function contact()
     {
