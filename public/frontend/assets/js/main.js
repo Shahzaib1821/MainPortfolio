@@ -1584,8 +1584,8 @@
         loop: true,
         spaceBetween: 10,
         navigation: {
-            nextEl: ".pp-next",
             prevEl: ".pp-prev",
+            nextEl: ".pp-next",
         },
         thumbs: {
             swiper: portfolio_project_thumbs,

@@ -85,7 +85,7 @@
                         <h6 class="text-end about-sub-right text-white">About Me</h6>
                         <div class="section_wrapper b-100">
                             <h4 class="react_border"><span>02</span></h4>
-                          </div>
+                        </div>
                         <div class="row">
                             <div class="col-xxl-4 col-xxl-4 col-lg-4">
                                 <div class="portfolio__about-left">
@@ -98,32 +98,53 @@
                             </div>
                             <div class="col-xxl-8 col-xl-8 col-lg-8">
                                 <div class="sec-text">
-                                    <p >
-                                        From a young age, I've been captivated by web development. As a dedicated Full Stack Developer, I am passionate about crafting exceptional digital experiences. My journey began at Aptech Learning Institute, where I first explored the world of web development with HTML and CSS, crafting simple yet functional web pages.
+                                    <p>
+                                        From a young age, I've been captivated by web development. As a dedicated Full Stack
+                                        Developer, I am passionate about crafting exceptional digital experiences. My
+                                        journey began at Aptech Learning Institute, where I first explored the world of web
+                                        development with HTML and CSS, crafting simple yet functional web pages.
                                         <br><br>
-                                        Over the past 18 months, I have significantly broadened my skill set and achieved proficiency in a wide array of modern technologies. On the frontend, I specialize in using
-                                        <img src="{{asset('frontend/assets/imgs/html-5.png')}}" alt="HTML Icon" class="skill-icon"> HTML,
-                                        <img src="{{asset('frontend/assets/imgs/css-3.png')}}" alt="CSS Icon" class="skill-icon"> CSS,
-                                        <img src="{{asset('frontend/assets/imgs/js.png')}}" alt="JavaScript Icon" class="skill-icon"> JavaScript,
-                                        <img src="{{asset('frontend/assets/imgs/bootstrap.png')}}" alt="Bootstrap Icon" class="skill-icon"> Bootstrap,
-                                        <img src="{{asset('frontend/assets/imgs/jquery.png')}}" alt="jQuery Icon" class="skill-icon"> jQuery,
-                                        <img src="{{asset('frontend/assets/imgs/react.svg')}}" alt="React Icon" class="skill-icon"> React, and
+                                        Over the past 18 months, I have significantly broadened my skill set and achieved
+                                        proficiency in a wide array of modern technologies. On the frontend, I specialize in
+                                        using
+                                        <img src="{{ asset('frontend/assets/imgs/html-5.png') }}" alt="HTML Icon"
+                                            class="skill-icon"> HTML,
+                                        <img src="{{ asset('frontend/assets/imgs/css-3.png') }}" alt="CSS Icon"
+                                            class="skill-icon"> CSS,
+                                        <img src="{{ asset('frontend/assets/imgs/js.png') }}" alt="JavaScript Icon"
+                                            class="skill-icon"> JavaScript,
+                                        <img src="{{ asset('frontend/assets/imgs/bootstrap.png') }}" alt="Bootstrap Icon"
+                                            class="skill-icon"> Bootstrap,
+                                        <img src="{{ asset('frontend/assets/imgs/jquery.png') }}" alt="jQuery Icon"
+                                            class="skill-icon"> jQuery,
+                                        <img src="{{ asset('frontend/assets/imgs/react.svg') }}" alt="React Icon"
+                                            class="skill-icon"> React, and
 
-                                        <img src="{{asset('frontend/assets/imgs/tailwind.svg')}}" alt="Tailwind CSS Icon" class="skill-icon"> Tailwind CSS. These tools enable me to build responsive websites, optimize user interfaces, and enhance overall user experience.
+                                        <img src="{{ asset('frontend/assets/imgs/tailwind.svg') }}" alt="Tailwind CSS Icon"
+                                            class="skill-icon"> Tailwind CSS. These tools enable me to build responsive
+                                        websites, optimize user interfaces, and enhance overall user experience.
                                         <br><br>
                                         For backend solutions, I am proficient in
-                                        <img src="{{asset('frontend/assets/imgs/php.png')}}" alt="PHP Icon" class="skill-icon"> PHP and
-                                        <img src="{{asset('frontend/assets/imgs/laravel.png')}}" alt="Laravel Icon" class="skill-icon"> Laravel, leveraging these technologies to create robust and scalable web applications. I also have experience with
-                                        <img src="{{asset('frontend/assets/imgs/mysql-icon.svg')}}" alt="MySQL Icon" class="skill-icon bg-light"> MySQL for database management and
-                                        <img src="{{asset('frontend/assets/imgs/wordpress.png')}}" alt="WordPress Icon" class="skill-icon"> WordPress for content management solutions.
+                                        <img src="{{ asset('frontend/assets/imgs/php.png') }}" alt="PHP Icon"
+                                            class="skill-icon"> PHP and
+                                        <img src="{{ asset('frontend/assets/imgs/laravel.png') }}" alt="Laravel Icon"
+                                            class="skill-icon"> Laravel, leveraging these technologies to create robust and
+                                        scalable web applications. I also have experience with
+                                        <img src="{{ asset('frontend/assets/imgs/mysql-icon.svg') }}" alt="MySQL Icon"
+                                            class="skill-icon bg-light"> MySQL for database management and
+                                        <img src="{{ asset('frontend/assets/imgs/wordpress.png') }}" alt="WordPress Icon"
+                                            class="skill-icon"> WordPress for content management solutions.
                                         <br><br>
                                         Additionally, I am skilled in
-                                        <img src="{{asset('frontend/assets/imgs/git.png')}}" alt="Git Icon" class="skill-icon"> Git for version control and collaboration, ensuring efficient development workflows and code management.
+                                        <img src="{{ asset('frontend/assets/imgs/git.png') }}" alt="Git Icon"
+                                            class="skill-icon"> Git for version control and collaboration, ensuring
+                                        efficient development workflows and code management.
                                         <br><br>
-                                        My goal is to contribute to the digital landscape by creating intuitive and impactful web solutions. Let's collaborate and bring your ideas to life!
+                                        My goal is to contribute to the digital landscape by creating intuitive and
+                                        impactful web solutions. Let's collaborate and bring your ideas to life!
                                     </p>
 
-                                    <a href="{{route('about')}}" class="wc-btn-dark">Explore Me</a>
+                                    <a href="{{ route('about') }}" class="wc-btn-dark">Explore Me</a>
                                 </div>
                             </div>
                         </div>
@@ -143,13 +164,15 @@
                                             <img src="frontend/assets/imgs/brand/1.png" alt="Brand Logo" width="150px" />
                                         </div>
                                         <div class="brand-logo">
-                                            <img src="frontend/assets/imgs/brand/2.png" alt="Brand Logo" width="150px"/>
+                                            <img src="frontend/assets/imgs/brand/2.png" alt="Brand Logo" width="150px" />
                                         </div>
                                         <div class="brand-logo">
-                                            <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo" width="150px"/>
+                                            <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo"
+                                                width="150px" />
                                         </div>
                                         <div class="brand-logo">
-                                            <img src="frontend/assets/imgs/brand/4.png" alt="Brand Logo" width="150px"/>
+                                            <img src="frontend/assets/imgs/brand/4.png" alt="Brand Logo"
+                                                width="150px" />
                                         </div>
                                     </div>
                                 </div>
@@ -173,26 +196,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8">
-                                <div class="pp-slider-wrapper">
-                                    <div class="swiper portfolio__project-slider">
-                                        <div class="swiper-wrapper">
-                                            @foreach ($projects as $project)
-                                                <div class="swiper-slide pp-slide">
-                                                    <div class="pp-slide-img">
-                                                        <a href="{{ $project->project_link }}" target="_blank"><img src="{{ asset($project->image_path) }}" alt="{{ $project->title }}" /></a>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
-
-                                    <div class="pp-next swiper-btn text-white">Next</div>
-                                    <div class="pp-prev swiper-btn text-white">Prev</div>
-                                </div>
-                            </div>
-
-                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                                 <div class="swiper portfolio__project-thumbs">
                                     <div class="swiper-wrapper">
                                         @foreach ($projects as $project)
@@ -204,6 +208,27 @@
                                             </div>
                                         @endforeach
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
+                                <div class="pp-slider-wrapper">
+                                    <div class="swiper portfolio__project-slider">
+                                        <div class="swiper-wrapper">
+                                            @foreach ($projects as $project)
+                                                <div class="swiper-slide pp-slide">
+                                                    <div class="pp-slide-img">
+                                                        <a href="{{ $project->project_link }}" target="_blank"><img
+                                                                src="{{ asset($project->image_path) }}"
+                                                                alt="{{ $project->title }}" /></a>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+
+                                    <div class="pp-prev swiper-btn text-white">Prev</div>
+                                    <div class="pp-next swiper-btn text-white">Next</div>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +294,8 @@
                                                     <h4 class="service__title">Website Development</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p> I am specialize in creating robust and scalable web applications tailored to meet your specific
+                                                    <p> I am specialize in creating robust and scalable web applications
+                                                        tailored to meet your specific
                                                         business needs..</p>
                                                 </div>
                                                 <div class="service__link">
@@ -285,7 +311,8 @@
                                                     <h4 class="service__title">CUSTOM SOFTWARE DEVELOPMENT</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>My custom software solutions are designed to streamline your business operations and enhance
+                                                    <p>My custom software solutions are designed to streamline your business
+                                                        operations and enhance
                                                         productivity.</p>
                                                 </div>
                                                 <div class="service__link">
@@ -301,7 +328,8 @@
                                                     <h4 class="service__title">WORDPRESS WEB DEVELOPMENT</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p> As experts in WordPress development, we create stunning websites that are user-friendly and
+                                                    <p> As experts in WordPress development, we create stunning websites
+                                                        that are user-friendly and
                                                         easily manageable.</p>
                                                 </div>
                                                 <div class="service__link">
@@ -317,7 +345,8 @@
                                                     <h4 class="service__title">WEBSITE REVAMPING & BUG FIXES</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>I am specialize in refining interfaces, resolving glitches, and optimizing functionality for
+                                                    <p>I am specialize in refining interfaces, resolving glitches, and
+                                                        optimizing functionality for
                                                         seamless user experiences.</p>
                                                 </div>
                                                 <div class="service__link">
@@ -333,7 +362,9 @@
                                                     <h4 class="service__title">Single Page Application</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p>Enhance user experience with our Single Page Application (SPA) development services. We build fast, responsive, and interactive SPAs that provide a seamless experience without page reloads.</p>
+                                                    <p>Enhance user experience with our Single Page Application (SPA)
+                                                        development services. We build fast, responsive, and interactive
+                                                        SPAs that provide a seamless experience without page reloads.</p>
                                                 </div>
                                                 <div class="service__link">
                                                     <p><i class="fa-solid fa-arrow-right"></i></p>
@@ -411,7 +442,7 @@
                                     <p class="cta__sub-title">Work with us</p>
                                     <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
                                     <div class="btn_wrapper">
-                                        <a href="{{route('contact')}}"
+                                        <a href="{{ route('contact') }}"
                                             class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
