@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontEndController::class, 'home'])->name('home');
 Route::get('/about', [FrontEndController::class, 'about'])->name('about');
 Route::get('/portfolio', [FrontEndController::class, 'portfolio'])->name('portfolio');
+Route::get('/services', [FrontEndController::class, 'services'])->name('services');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
 
 Route::get('/dashboard', function () {

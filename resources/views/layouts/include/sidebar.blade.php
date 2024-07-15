@@ -37,9 +37,9 @@
                        <li>
                             <a href="{{ route('portfolio') }}">Portfolio</a>
                         </li>
-                        {{--  <li>
-                            <a href="{{ route('events') }}">Events</a>
-                        </li>
+                         <li>
+                            <a href="{{ route('services') }}">Services</a>
+                     {{--    </li>
                         <li>
                             <a href="{{ route('careers') }}">Career</a>
                         </li> --}}

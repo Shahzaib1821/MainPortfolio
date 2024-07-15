@@ -76,10 +76,12 @@
       <div class="header__inner">
           <div class="header__logo">
               <a href="{{ url('/') }}">
-                  <img class="logo-primary" src="{{ asset('/frontend/assets/imgs/logo/site-logo-white.png') }}"
+                  {{-- <img class="logo-primary" src="{{ asset('/frontend/assets/imgs/logo/site-logo-white.png') }}"
                       alt="Site Logo" />
                   <img class="logo-secondary" src="{{ asset('/frontend/assets/imgs/logo/site-logo-white-2.png') }}"
-                      alt="Mobile Logo" />
+                      alt="Mobile Logo" /> --}}
+                      <div class="logo-primary text-white">Shahzaib</div>
+                      <div class="logo-secondary text-black">Shahzaib</div>
               </a>
           </div>
           <div class="header__nav-icon">

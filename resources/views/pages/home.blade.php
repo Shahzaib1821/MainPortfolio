@@ -82,27 +82,47 @@
 
                 <section class="portfolio-section portfolio__about pt-140 pb-150">
                     <div class="container">
+                        <h6 class="text-end about-sub-right text-white">About Me</h6>
+                        <div class="section_wrapper b-100">
+                            <h4 class="react_border"><span>02</span></h4>
+                          </div>
                         <div class="row">
-                            <div class="col-xxl-8 col-xxl-8 col-lg-8">
+                            <div class="col-xxl-4 col-xxl-4 col-lg-4">
                                 <div class="portfolio__about-left">
                                     <h2 class="sec-title">
-                                        I craft wonderful
-                                        <span>digital experiences</span> for brands
+                                        Hello! I'm
+                                        <span> <br> </span>Muhammad Shahzaib
                                     </h2>
                                     <img src="frontend/assets/imgs/shape/16.png" alt="Shape" />
                                 </div>
                             </div>
-                            <div class="col-xxl-4 col-xl-4 col-lg-4">
+                            <div class="col-xxl-8 col-xl-8 col-lg-8">
                                 <div class="sec-text">
-                                    <p>
-                                        Based in Washington, DC, I work with experts from
-                                        the Center for Strategic and International Studies
-                                        (CSIS) to help them communicate their research
-                                        more effectively on the web. Together we make
-                                        websites, data visualizations, and long-forms that
-                                        strengthen their networks and engage new audiences
-                                        with thoughtful content and design strategies.
+                                    <p >
+                                        From a young age, I've been captivated by web development. As a dedicated Full Stack Developer, I am passionate about crafting exceptional digital experiences. My journey began at Aptech Learning Institute, where I first explored the world of web development with HTML and CSS, crafting simple yet functional web pages.
+                                        <br><br>
+                                        Over the past 18 months, I have significantly broadened my skill set and achieved proficiency in a wide array of modern technologies. On the frontend, I specialize in using
+                                        <img src="{{asset('frontend/assets/imgs/html-5.png')}}" alt="HTML Icon" class="skill-icon"> HTML,
+                                        <img src="{{asset('frontend/assets/imgs/css-3.png')}}" alt="CSS Icon" class="skill-icon"> CSS,
+                                        <img src="{{asset('frontend/assets/imgs/js.png')}}" alt="JavaScript Icon" class="skill-icon"> JavaScript,
+                                        <img src="{{asset('frontend/assets/imgs/bootstrap.png')}}" alt="Bootstrap Icon" class="skill-icon"> Bootstrap,
+                                        <img src="{{asset('frontend/assets/imgs/jquery.png')}}" alt="jQuery Icon" class="skill-icon"> jQuery,
+                                        <img src="{{asset('frontend/assets/imgs/react.svg')}}" alt="React Icon" class="skill-icon"> React, and
+
+                                        <img src="{{asset('frontend/assets/imgs/tailwind.svg')}}" alt="Tailwind CSS Icon" class="skill-icon"> Tailwind CSS. These tools enable me to build responsive websites, optimize user interfaces, and enhance overall user experience.
+                                        <br><br>
+                                        For backend solutions, I am proficient in
+                                        <img src="{{asset('frontend/assets/imgs/php.png')}}" alt="PHP Icon" class="skill-icon"> PHP and
+                                        <img src="{{asset('frontend/assets/imgs/laravel.png')}}" alt="Laravel Icon" class="skill-icon"> Laravel, leveraging these technologies to create robust and scalable web applications. I also have experience with
+                                        <img src="{{asset('frontend/assets/imgs/mysql-icon.svg')}}" alt="MySQL Icon" class="skill-icon bg-light"> MySQL for database management and
+                                        <img src="{{asset('frontend/assets/imgs/wordpress.png')}}" alt="WordPress Icon" class="skill-icon"> WordPress for content management solutions.
+                                        <br><br>
+                                        Additionally, I am skilled in
+                                        <img src="{{asset('frontend/assets/imgs/git.png')}}" alt="Git Icon" class="skill-icon"> Git for version control and collaboration, ensuring efficient development workflows and code management.
+                                        <br><br>
+                                        My goal is to contribute to the digital landscape by creating intuitive and impactful web solutions. Let's collaborate and bring your ideas to life!
                                     </p>
+
                                     <a href="{{route('about')}}" class="wc-btn-dark">Explore Me</a>
                                 </div>
                             </div>
@@ -212,8 +232,8 @@
                                 <div class="service__top-btn">
                                     <div class="btn_wrapper">
                                         <a href="#" class="btn-item wc-btn-secondary btn-hover"><span></span>
-                                            View <br>all
-                                            services <i class="fa-solid fa-arrow-right"></i></a>
+                                            Get In<br>
+                                            touch <i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -221,23 +241,25 @@
 
                         <div class="service__list-wrapper">
                             <div class="row">
-                                <di class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
-                                    <div class="service__img-wrapper ">
+                                <div class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
+                                    <div class="service__img-wrapper d-flex align-items-center">
                                         <img src="frontend/assets/imgs/service/1/1.jpg" alt="Service Image"
                                             class="service__img img-1 active">
-                                        <img src="frontend/assets/imgs/service/1/2.png" alt="Service Image"
+                                        <img src="frontend/assets/imgs/service/1/2.jpg" alt="Service Image"
                                             class="service__img img-2">
-                                        <img src="frontend/assets/imgs/service/1/3.png" alt="Service Image"
+                                        <img src="frontend/assets/imgs/service/1/3.jpg" alt="Service Image"
                                             class="service__img img-3">
-                                        <img src="frontend/assets/imgs/service/1/4.png" alt="Service Image"
+                                        <img src="frontend/assets/imgs/service/1/4.jpg" alt="Service Image"
                                             class="service__img img-4">
+                                        <img src="frontend/assets/imgs/service/1/5.jpg" alt="Service Image"
+                                            class="service__img img-5">
 
-                                        <span class="shape-box-1 current"></span>
+                                        {{-- <span class="shape-box-1 current"></span>
                                         <span class="shape-box-2"></span>
                                         <span class="shape-box-3"></span>
-                                        <span class="shape-box-4"></span>
+                                        <span class="shape-box-4"></span> --}}
                                     </div>
-                                </di v>
+                                </div>
                                 <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
                                     <div class="service__list">
                                         <a href="#">
@@ -303,6 +325,21 @@
                                                 </div>
                                             </div>
                                         </a>
+
+                                        <a href="#">
+                                            <div class="service__item  animation_home1_service" data-service="5">
+                                                <div class="service__number"><span>05</span></div>
+                                                <div class="service__title-wrapper">
+                                                    <h4 class="service__title">Single Page Application</h4>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>Enhance user experience with our Single Page Application (SPA) development services. We build fast, responsive, and interactive SPAs that provide a seamless experience without page reloads.</p>
+                                                </div>
+                                                <div class="service__link">
+                                                    <p><i class="fa-solid fa-arrow-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -312,7 +349,7 @@
                 <!-- Service area end -->
 
                 <!-- Award area start -->
-                <section class="award__area pt-130 pb-140 bg-transparent">
+                <section class="award__area pt-130 pb-140">
                     <div class="container">
                         <div class="row">
                             <div class="col-xxl-12">

@@ -52,7 +52,7 @@
     </div>
 
     <!-- Switcher Area Start -->
-    <div class="switcher__area">
+    {{-- <div class="switcher__area">
         <div class="switcher__icon">
             <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
             <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Switcher Area End -->
 
     <!-- Scroll Smoother -->
@@ -106,10 +106,11 @@
     <header class="header__area-2">
         <div class="header__inner-5">
             <div class="header__logo-5">
-                <a href="index.html" class="logo-dark"><img
+                {{-- <a href="index.html" class="logo-dark"><img
                         src="{{ asset('frontend/assets/imgs/logo/logo-black.png') }}" alt="Site Logo" /></a>
                 <a href="index.html" class="logo-light"><img
-                        src="{{ asset('frontend/assets/imgs/logo/site-logo-white-2.png') }}" alt="Site Logo" /></a>
+                        src="{{ asset('frontend/assets/imgs/logo/site-logo-white-2.png') }}" alt="Site Logo" /></a> --}}
+                        <div class="title shape-circle text-white fw-bold ">SHAHZAIB</div>
             </div>
             <div class="header__nav-icon-5">
                 <button id="open_offcanvas">
