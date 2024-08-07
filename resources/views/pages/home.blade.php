@@ -118,7 +118,9 @@
                                         <img src="{{ asset('frontend/assets/imgs/jquery.png') }}" alt="jQuery Icon"
                                             class="skill-icon"> jQuery,
                                         <img src="{{ asset('frontend/assets/imgs/react.svg') }}" alt="React Icon"
-                                            class="skill-icon"> React, and
+                                            class="skill-icon"> React,
+                                        <img src="{{ asset('frontend/assets/imgs/nextjs.svg') }}" alt="React Icon"
+                                            class="skill-icon bg-light"> NextJs, and
 
                                         <img src="{{ asset('frontend/assets/imgs/tailwind.svg') }}" alt="Tailwind CSS Icon"
                                             class="skill-icon"> Tailwind CSS. These tools enable me to build responsive
@@ -170,10 +172,6 @@
                                             <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo"
                                                 width="150px" />
                                         </div>
-                                        <div class="brand-logo">
-                                            <img src="frontend/assets/imgs/brand/4.png" alt="Brand Logo"
-                                                width="150px" />
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -204,6 +202,7 @@
                                                 <div class="pp-slide-thumb">
                                                     <h3 class="pp-slide-title">{{ $project->title }}</h3>
                                                     <p>{{ $project->description }}</p>
+                                                    <a href="{{$project->project_link }}" class="text-white btn-extra mt-2">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -256,9 +255,9 @@
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                                 <div class="service__top-btn">
                                     <div class="btn_wrapper">
-                                        <a href="#" class="btn-item wc-btn-secondary btn-hover"><span></span>
-                                            Get In<br>
-                                            touch <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="{{route('services')}}" class="btn-item wc-btn-secondary btn-hover"><span></span>
+                                            View All<br>
+                                            Services<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>

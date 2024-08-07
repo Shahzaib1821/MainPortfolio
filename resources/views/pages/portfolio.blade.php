@@ -88,8 +88,8 @@
                                                         </div>
                                                         <h4 class="text-center project-heading title-anim title">Project For</h4>
                                                         {{-- <h4 class="tm-rolee">About Project</h4> --}}
-                                                        <h4 class="custom-badgese project-heading title-anim title">Technologies Used</h4>
-                                                        <h4 class="custom-badgese project-heading title-anim title">Visit Project</h4>
+                                                        <h4 class="custom-badgese project-heading title-anim title">Stacks</h4>
+                                                        <h4 class="custom-badgese project-heading title-anim title">Visit</h4>
 
                                                     </div>
                                                 </a>

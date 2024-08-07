@@ -458,7 +458,7 @@
                 document.body.scrollTop > 20 ||
                 document.documentElement.scrollTop > 20
             ) {
-                header_bg_2.style.background = "#121212";
+                header_bg_2.style.background = "transparent";
                 header_bg_2.classList.add("sticky-2");
                 if (scroll_top) {
                     scroll_top.style.display = "block";

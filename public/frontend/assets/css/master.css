@@ -285,7 +285,7 @@ h6 {
 
 @media only screen and (max-width: 767px) {
     .pt-100 {
-        padding-top: 60px;
+        padding-top: 120px;
     }
 }
 
@@ -15523,7 +15523,11 @@ img {
 
 @media only screen and (max-width: 767px) {
     .portfolio__hero .title {
-        font-size: 52px;
+        font-size: 52px ;
+    }
+    .portfolio__hero .title.text-stroke {
+        font-size: 40px !important;
+        margin-bottom: 10px;
     }
 }
 
@@ -15907,7 +15911,11 @@ img {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding-left: 0;
-        gap: 40px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .portfolio__about .brand-logo img {
+        max-width: 80px;
     }
 }
 
@@ -30386,19 +30394,35 @@ main {
     padding: 18px 0;
     opacity: 1;
 }
-
+.team__item-7 h4.custom-badgese{
+    text-align: center !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .team__item-7 {
-        -ms-grid-columns: 1.5fr 1fr 0.1fr;
-        grid-template-columns: 1.5fr 1fr 0.1fr;
+        -ms-grid-columns:0.5fr 0.5fr 0.5fr;
+        grid-template-columns:0.5fr 0.5fr 0.5fr;
     }
+    .team__item-7 h4{
+        font-size: 0.8rem !important;
+    }
+
+
 }
 
 @media only screen and (max-width: 767px) {
     .team__item-7 {
         padding: 12px 0;
-        -ms-grid-columns: 1.5fr 1fr 0.1fr;
-        grid-template-columns: 1.5fr 1fr 0.1fr;
+        -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    }
+    .team__item-7 h4{
+        font-size: 0.8rem !important;
+    }
+    .team__item-7 h4.custom-badgese{
+        text-align: center !important;
+    }
+    .team__item-7 h4.custom-badgese:last-of-type, .team__item-7 .tm-link {
+        display: none !important;
     }
 }
 
