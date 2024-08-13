@@ -16,6 +16,7 @@ class Project extends Model
         'project_link',
         'stacks',
         'company',
+        'background_color',
     ];
 
 }

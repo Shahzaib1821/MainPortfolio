@@ -84,6 +84,19 @@
 
                             <div class="col-lg-6">
                                 <div class="form-group mb-4">
+                                    <label for="background_color">Background Color: </label>
+                                    <input type="text" class="form-control @error('background_color') is-invalid @enderror"
+                                        id="background_color" name="background_color" value="{{ old('background_color', $project->background_color) }}">
+                                    @error('background_color')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group mb-4">
                                     <label for="description">Description: </label>
                                     <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description"
                                         rows="4">{{ old('description', $project->description) }}</textarea>

@@ -216,7 +216,7 @@
                                         <div class="swiper-wrapper">
                                             @foreach ($projects as $project)
                                                 <div class="swiper-slide pp-slide">
-                                                    <div class="pp-slide-img">
+                                                    <div class="pp-slide-img" style="background-color: {{$project->background_color}}">
                                                         <a href="{{ $project->project_link }}" target="_blank"><img
                                                                 src="{{ asset($project->image_path) }}"
                                                                 alt="{{ $project->title }}" /></a>

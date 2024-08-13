@@ -28,13 +28,15 @@ class ProjectsController extends Controller
             'project_link' => 'nullable|url',
             'stacks' => 'nullable|string',
             'company' => 'nullable|string',
+            'background_color' => 'nullable|string',
         ]);
 
         $project = new Project();
         $project->title = $request->title;
-        $project->description = $request->description;
+        $project->description = $request->description; // Make sure description is handled correctly
         $project->stacks = $request->stacks;
         $project->company = $request->company;
+        $project->background_color = $request->background_color;
 
         if ($request->hasFile('image_path')) {
             $image = $request->file('image_path');
@@ -70,13 +72,15 @@ class ProjectsController extends Controller
             'project_link' => 'nullable|url',
             'stacks' => 'nullable|string',
             'company' => 'nullable|string',
+            'background_color' => 'nullable|string',
         ]);
 
         $project = Project::findOrFail($id);
         $project->title = $request->title;
-        $project->description = $request->description;
+        $project->description = $request->description; // Ensure description is handled correctly
         $project->stacks = $request->stacks;
         $project->company = $request->company;
+        $project->background_color = $request->background_color;
 
         if ($request->hasFile('image_path')) {
             // Delete old image if exists

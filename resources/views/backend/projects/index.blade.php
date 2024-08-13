@@ -37,7 +37,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $project->title }}</td>
-                                        <td>{{ $project->description }}</td>
+                                        <td style="width: 250px">{{ $project->description }}</td>
                                         <td><img src="{{ asset($project->image_path) }}" class="img-thumbnail" width="100px" /></td>
                                         <td><a href="{{ $project->project_link }}" target="_blank">{{ $project->project_link }}</a></td>
                                         <td>
