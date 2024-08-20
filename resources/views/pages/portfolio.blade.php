@@ -17,7 +17,7 @@
                                     </h2>
                                     <h3 class="sec-title title-anim">
                                         <div>
-                                            Showcasing Our
+                                            Showcasing My
                                         </div>
                                         <div>
                                             Best Work
@@ -28,12 +28,12 @@
                             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                                 <div class="service__top-text text-anim">
                                     <p class="text-white-50">
-                                        Our portfolio highlights the diversity and depth of our expertise across various
+                                        My portfolio highlights the diversity and depth of our expertise across various
                                         industries.
-                                        We are committed to delivering exceptional results through <span>innovative design
+                                        I am committed to delivering exceptional results through <span>innovative design
                                             solutions</span> and
                                         cutting-edge technology, always pushing the boundaries to exceed client
-                                        expectations.>
+                                        expectations.
                                     </p>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                                 <div class="service__top-btn">
                                     <div class="btn_wrapper"
                                         style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                        <a href="#" class="btn-item wc-btn-secondary btn-hover"
+                                        <a href="{{route('contact')}}" class="btn-item wc-btn-secondary btn-hover"
                                             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><span
                                                 style="top: 77.6304px; left: -3.64136px;"></span>
                                             Get In<br>
@@ -79,17 +79,20 @@
                                     <div class="row">
                                         <div class="col-xxl-12">
                                             <div class="team__items-7">
-                                                <a href="team-details.html">
+                                                <a href="#">
                                                     <div class="team__item-7 fade_bottom_3">
                                                         <div class="team__name-wrap-7">
                                                             <p class="tm-serial"></p>
 
                                                             <h4 class="project-heading title-anim title">Project Name</h4>
                                                         </div>
-                                                        <h4 class="text-center project-heading title-anim title">Project For</h4>
+                                                        <h4 class="text-center project-heading title-anim title">Project For
+                                                        </h4>
                                                         {{-- <h4 class="tm-rolee">About Project</h4> --}}
-                                                        <h4 class="custom-badgese project-heading title-anim title">Stacks</h4>
-                                                        <h4 class="custom-badgese project-heading title-anim title">Visit</h4>
+                                                        <h4 class="custom-badgese project-heading title-anim title">Stacks
+                                                        </h4>
+                                                        <h4 class="custom-badgese project-heading title-anim title">Visit
+                                                        </h4>
 
                                                     </div>
                                                 </a>
@@ -102,7 +105,7 @@
                                     @foreach ($projects as $project)
                                         <div class="col-md-12">
                                             <div class="team__items-7">
-                                                <a href="team-details.html">
+                                                <a href="{{ $project->project_link }}" target="_blank">
                                                     <div class="team__item-7 fade_bottom_3">
                                                         <div class="team__name-wrap-7">
                                                             <p class="tm-serial">{{ $project->id }}</p>
@@ -140,7 +143,7 @@
                                     @foreach ($projects->where('company', 'Freelance') as $project)
                                         <div class="col-md-12">
                                             <div class="team__items-7">
-                                                <a href="team-details.html">
+                                                <a href="{{ $project->project_link }}" target="_blank">
                                                     <div class="team__item-7 fade_bottom_3">
                                                         <div class="team__name-wrap-7">
                                                             <p class="tm-serial">{{ $project->id }}</p>
@@ -179,7 +182,7 @@
                                     @foreach ($projects->where('company', 'Softwares') as $project)
                                         <div class="col-md-12">
                                             <div class="team__items-7">
-                                                <a href="team-details.html">
+                                                <a href="{{ $project->project_link }}" target="_blank">
                                                     <div class="team__item-7 fade_bottom_3">
                                                         <div class="team__name-wrap-7">
                                                             <p class="tm-serial">{{ $project->id }}</p>

@@ -556,19 +556,19 @@
         },
         breakpoints: {
             640: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             },
             800: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 3,
             },
             1300: {
-                slidesPerView: 6,
+                slidesPerView: 3,
             },
             1900: {
-                slidesPerView: 8,
+                slidesPerView: 3
             },
         },
     });

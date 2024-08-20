@@ -18,7 +18,7 @@
                                         <a href="{{ route('portfolio') }}" class="wc-btn-dark">View all
                                             work</a>
                                     </div>
-                                    <img src="frontend/assets/imgs/portfolio/1.png" alt="Personal Portfolio"
+                                    <img src="frontend/assets/imgs/portfolio/2.png" alt="Personal Portfolio"
                                         class="pp-thumb" />
                                 </div>
                             </div>
@@ -27,57 +27,83 @@
                 </section>
 
                 <!-- Roll area start -->
-                <section class="roll__area">
+                {{-- <section class="roll__area">
                     <div class="swiper roll__slider">
                         <div class="swiper-wrapper roll__wrapper">
                             <div class="swiper-slide roll__slide">
-                                <h2>Development</h2>
+                                <h2>Full Stack Development</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Studio</h2>
+                                <h2>Frontend Mastery</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Strategy</h2>
+                                <h2>Backend Solutions</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Branding</h2>
+                                <h2>Web Design</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Agency</h2>
+                                <h2>Responsive UI/UX</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>typhography</h2>
+                                <h2>Database Management</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Design</h2>
+                                <h2>Version Control</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Interaction</h2>
+                                <h2>Laravel & PHP</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Element</h2>
+                                <h2>React & Next.js</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>DIgital SOlution</h2>
+                                <h2>WordPress </h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Strategy</h2>
+                                <h2>Digital Solutions</h2>
                             </div>
                             <div class="swiper-slide roll__slide">
-                                <h2>Branding</h2>
-                            </div>
-                            <div class="swiper-slide roll__slide">
-                                <h2>Agency</h2>
-                            </div>
-                            <div class="swiper-slide roll__slide">
-                                <h2>Interaction</h2>
-                            </div>
-                            <div class="swiper-slide roll__slide">
-                                <h2>DIgital SOlution</h2>
+                                <h2>Collaboration & Git</h2>
                             </div>
                         </div>
                     </div>
+                </section> --}}
+                <section class="roll__area">
+                    <div class="roll__slider">
+                        <marquee class="roll__wrapper" behavior="scroll" direction="left" scrollamount="15">
+                            <div class="roll__slide">
+                                <div class="d-flex gap-5">
+                                    <h2>Full Stack Development</h2>
+
+                                    <h2>Frontend Mastery</h2>
+
+                                    <h2>Backend Solutions</h2>
+
+                                    <h2>Web Design</h2>
+
+                                    <h2>Responsive UI/UX</h2>
+
+                                    <h2>Database Management</h2>
+
+                                    <h2>Version Control</h2>
+
+                                    <h2>Laravel & PHP</h2>
+
+                                    <h2>React & Next.js</h2>
+
+                                    <h2>WordPress Development</h2>
+
+                                    <h2>Digital Solutions</h2>
+
+                                    <h2>Collaboration & Git</h2>
+                                </div>
+                            </div>
+                        </marquee>
+                    </div>
                 </section>
+
+
                 <!-- Roll area end -->
 
                 <section class="portfolio-section portfolio__about pt-140 pb-150">
@@ -169,8 +195,7 @@
                                             <img src="frontend/assets/imgs/brand/2.png" alt="Brand Logo" width="150px" />
                                         </div>
                                         <div class="brand-logo">
-                                            <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo"
-                                                width="150px" />
+                                            <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo" width="150px" />
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +227,9 @@
                                                 <div class="pp-slide-thumb">
                                                     <h3 class="pp-slide-title">{{ $project->title }}</h3>
                                                     <p>{{ $project->description }}</p>
-                                                    <a href="{{$project->project_link }}" class="text-white btn-extra mt-2">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                                                    <a href="{{ $project->project_link }}"
+                                                        class="text-white btn-extra mt-2">Visit Site <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -216,7 +243,8 @@
                                         <div class="swiper-wrapper">
                                             @foreach ($projects as $project)
                                                 <div class="swiper-slide pp-slide">
-                                                    <div class="pp-slide-img" style="background-color: {{$project->background_color}}">
+                                                    <div class="pp-slide-img"
+                                                        style="background-color: {{ $project->background_color }}">
                                                         <a href="{{ $project->project_link }}" target="_blank"><img
                                                                 src="{{ asset($project->image_path) }}"
                                                                 alt="{{ $project->title }}" /></a>
@@ -241,12 +269,12 @@
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                                 <div class="sec-title-wrapper wrap">
                                     <h2 class="sec-sub-title title-anim">service</h2>
-                                    <h3 class="sec-title title-anim">Solution we <br>provide</h3>
+                                    <h3 class="sec-title title-anim">Solution I <br>provide</h3>
                                 </div>
                             </div>
                             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                                 <div class="service__top-text text-anim">
-                                    <p>With every single one of our clients we bring forth a deep passion
+                                    <p>With every single one of my clients I bring forth a deep passion
                                         for <span>creative problem solving
                                             innovations</span> forward thinking
                                         brands boundaries</p>
@@ -255,7 +283,8 @@
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                                 <div class="service__top-btn">
                                     <div class="btn_wrapper">
-                                        <a href="{{route('services')}}" class="btn-item wc-btn-secondary btn-hover"><span></span>
+                                        <a href="{{ route('services') }}"
+                                            class="btn-item wc-btn-secondary btn-hover"><span></span>
                                             View All<br>
                                             Services<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
@@ -286,7 +315,7 @@
                                 </div>
                                 <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
                                     <div class="service__list">
-                                        <a href="#">
+                                        <a href="{{route('contact')}}">
                                             <div class="service__item animation_home1_service" data-service="1">
                                                 <div class="service__number"><span>01</span></div>
                                                 <div class="service__title-wrapper">
@@ -327,7 +356,7 @@
                                                     <h4 class="service__title">WORDPRESS WEB DEVELOPMENT</h4>
                                                 </div>
                                                 <div class="service__text">
-                                                    <p> As experts in WordPress development, we create stunning websites
+                                                    <p> As experts in WordPress development, I create stunning websites
                                                         that are user-friendly and
                                                         easily manageable.</p>
                                                 </div>
@@ -362,7 +391,7 @@
                                                 </div>
                                                 <div class="service__text">
                                                     <p>Enhance user experience with our Single Page Application (SPA)
-                                                        development services. We build fast, responsive, and interactive
+                                                        development services. I build fast, responsive, and interactive
                                                         SPAs that provide a seamless experience without page reloads.</p>
                                                 </div>
                                                 <div class="service__link">
@@ -395,38 +424,40 @@
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                 <div class="award__left">
                                     <h4 class="award__text-2">Experience</h4>
-                                    <h3 class="award__text">Experience</h3>
+                                    <h3 class="award__text">Professional Experience</h3>
                                     <img src="frontend/assets/imgs/shape/3.png" alt="Shape Image" data-speed="1"
                                         data-lag="0.2">
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                 <div class="award__right">
-                                    <p>We're passionate about doing the best digital
-                                        innovation we can and pushing new
-                                        technology
-                                        to its limits. And we achieve
-                                        results we're proud of beyond the realm.</p>
+                                    <p>With a commitment to pushing digital innovation and leveraging new technologies, I
+                                        am dedicated to achieving outstanding results. My diverse professional background
+                                        highlights my expertise and ability to excel in various environments.</p>
                                     <div class="award__list">
                                         <div class="award__item">
                                             <p>LiveBits</p>
-                                            <img src="frontend/assets/imgs/brand/1.png" alt="Brand Logo" width="80px">
-                                            <p>2021</p>
+                                            <img src="frontend/assets/imgs/brand/1.png" alt="LiveBits Logo"
+                                                width="80px">
+                                            <p>8 months</p>
                                         </div>
                                         <div class="award__item">
                                             <p>II Solutions</p>
-                                            <img src="frontend/assets/imgs/brand/2.png" alt="Brand Logo" width="80px">
-                                            <p>2020</p>
+                                            <img src="frontend/assets/imgs/brand/2.png" alt="II Solutions Logo"
+                                                width="80px">
+                                            <p>6 months</p>
                                         </div>
                                         <div class="award__item">
                                             <p>The Ridgeline Marketing</p>
-                                            <img src="frontend/assets/imgs/brand/3.png" alt="Brand Logo" width="80px">
-                                            <p>2018</p>
+                                            <img src="frontend/assets/imgs/brand/3.png" alt="The Ridgeline Marketing Logo"
+                                                width="80px">
+                                            <p>Present</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
                 <!-- Award area end -->
@@ -438,11 +469,11 @@
                         <div class="row">
                             <div class="col-xxl-12">
                                 <div class="cta__content">
-                                    <p class="cta__sub-title">Work with us</p>
-                                    <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
+                                    <p class="cta__sub-title">Work with me</p>
+                                    <h2 class="cta__title title-anim">I would love to hear more about your project</h2>
                                     <div class="btn_wrapper">
                                         <a href="{{ route('contact') }}"
-                                            class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
+                                            class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk with me <i
                                                 class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>

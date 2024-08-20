@@ -10,7 +10,7 @@
     <title>@yield('title', 'The Ridgeline Marketing')</title>
 
     <!-- Fav Icon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('frontend/frontend/assets/imgs/logo/favicon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('frontend/assets/imgs/portfolio/1.png') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

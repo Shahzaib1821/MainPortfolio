@@ -81,7 +81,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group mb-4">
                                     <label for="background_color">Background Color: </label>
-                                    <input type="file" class="form-control @error('background_color') is-invalid @enderror"
+                                    <input type="text" class="form-control @error('background_color') is-invalid @enderror"
                                         id="background_color" name="background_color">
                                     @error('background_color')
                                         <span class="invalid-feedback" role="alert">
